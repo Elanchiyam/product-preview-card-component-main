@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3eae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+div .image{
+    content:url("images/image-product-desktop.jpg");
+    height: auto;
+    width: 20em;
+    background-repeat: no-repeat;
+    background-position: right;  
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.details{
+    width: 18em;
+    padding: 2em;
+}
+
+.details h6{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: gray;
+    letter-spacing: 4px;
+    font-size: 10px;
+}
+
+.details h2{
+    margin: 10px 25px 20px 0px;
+    padding: 20px 10px 0px 0px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 29px;
+}
+
+.details p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: gray;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0px;
+}
+
+.price{
+    margin: 0px;
+    padding: 10px 0px;
+    display: flex;
+}
+
+.price h1{
+    color: #3d8168;
+    margin-right: 10px;
+}
+
+.price h5{
+    text-decoration: line-through;
+    font-weight: lighter;
+    color: gray;
+    margin: 10px;
+}
+
+.btn{
+   border: none;
+   background-color: #3d8168;
+   margin-top: auto;
+   padding: 1rem;
+   border-radius: 0.5rem;
+   width: 100%;
+   color: white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+}
+.btn img{
+    padding-right: 10px;
+}
+
+.btn:hover{
+    background-color: #1a4031;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        background-color: white;
+        flex-direction: column;
+        width:400px;
+        margin: 25px 20px 25px 20px;
+    }
+    div .image{
+        content:url("images/image-product-mobile.jpg");
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .details{       
+        width: 100%;
+        padding: 40px;
+    }
+    .details h2{
+        font-size: 2em;
+        padding: 10px 10px 0px 0px;
+    }
+}
